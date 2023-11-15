@@ -1,0 +1,80 @@
+.btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  gap: 0.5rem;
+  border-radius: 500px;
+  padding: 0.75rem 1.75rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: opacity var(--hover-time) var(--hover-type);
+}
+
+.btn.primary {
+  background-color: var(--primary-accent);
+}
+
+.btn.transparent {
+  background-color: transparent;
+}
+
+.btn.gray {
+  color: var(--gray);
+}
+
+.btn.black {
+  color: var(--black);
+}
+
+.waveIcon {
+  background-color: var(--white);
+  rotate: -45deg;
+  padding: 0.75rem;
+  border-radius: 100%;
+  transition: rotate var(--hover-time) var(--hover-type);
+}
+
+.btn:hover .waveIcon {
+  animation: waver 0.5s ease-in 1;
+  opacity: 1;
+}
+
+@supports (rotate: 0deg) {
+  @keyframes waver {
+    25% {
+      rotate: 0deg;
+    }
+    75% {
+      rotate: -90deg;
+    }
+    100% {
+      rotate: -45deg;
+    }
+  }
+}
+
+.arrowIcon {
+  position: relative;
+  transform: translateX(-70%);
+  background-color: var(--primary-accent);
+  padding: 0.75rem;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  transition: transform var(--hover-time) var(--hover-type);
+}
+
+.btn:hover .arrowIcon {
+  transform: translateX(0);
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  background-color: transparent;
+  outline: 1px solid var(--gray);
+  outline-offset: -2px;
+  border-radius: 100%;
+}

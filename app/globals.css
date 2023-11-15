@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
 
 :root {
-  --black: #06040E;
+  --black: #171211;
   --white: #fff;
 
+  --primary-accent: #FFAD05;
+  --tertiary-accent: #F41D15;
+  --secondary-accent: #477998;
+  
+  --gray: #C9CAD9;
 
-  --heading: 'Work Sans', sans-serif;
-
+  --hover-time: 300ms;
+  --hover-type: ease;
 }
 
 html, body, div, span, applet, object, iframe,
