@@ -1,0 +1,17 @@
+.heroSection {
+    background: var(--black);
+    color: var(--white);
+}
+
+.heroSection h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.heroTextContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
