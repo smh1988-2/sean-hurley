@@ -11,6 +11,7 @@ interface ButtonProps {
   icon: ReactNode | string;
   bgColor: string;
   color: string;
+  type?: string;
 }
 
 function Button(propsIn: ButtonProps) {
@@ -35,9 +36,12 @@ function Button(propsIn: ButtonProps) {
         ${styles.btn} 
         ${styles[props.bgColor]}
         ${styles[props.color]}
+        ${styles[props.type]}
         `}
     >
-      <Image src={icon} className={styles[props.icon]} alt="" />
+      {props.type !== "text" ? (
+        <Image src={icon} className={styles[props.icon]} alt="" />
+      ) : null}
       {props.content}
     </button>
   );

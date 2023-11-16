@@ -12,6 +12,8 @@
 
   --hover-time: 300ms;
   --hover-type: ease;
+
+  --section-heading: 4.5rem;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -61,4 +63,11 @@ table {
   margin:auto;
   max-width: 1200px;
   padding: 4rem 2rem;
+}
+
+.section-heading {
+  font-size: var(--section-heading);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
 }
