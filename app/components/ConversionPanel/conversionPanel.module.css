@@ -1,0 +1,33 @@
+.converionPanelSection {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.conversionPanelContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.converionPanelHeading {
+    position: relative;
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.converionPanelHeading:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    transform: translate(65px, 10px);
+    width: 4.75rem;
+    height: 4.75rem;
+    border-radius: 100%;
+    background-color: var(--secondary-accent);
+    background-image: url("../../../public/images/sh.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

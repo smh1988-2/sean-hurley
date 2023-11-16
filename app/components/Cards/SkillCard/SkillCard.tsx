@@ -1,13 +1,13 @@
 import React, { ReactNode } from "react";
-
-import { inter, work_sans } from "@/app/fonts";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { work_sans } from "@/app/fonts";
 
 import styles from "./skillCard.module.css";
 import Image from "next/image";
 
 interface SkillCardProps {
   skill: {
-    icon: ReactNode | string;
+    icon: StaticImport | ReactNode | string;
     heading: string;
     subheading: string;
   };

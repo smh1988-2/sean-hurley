@@ -22,6 +22,21 @@ const skills = [
         heading: "Front-end Development",
         subheading: "Lorem impsum sit alor decom"  
     },
+    {
+        icon: code,
+        heading: "Front-end Development",
+        subheading: "Lorem impsum sit alor decom"    
+    },
+    {
+        icon: code,
+        heading: "Front-end Development",
+        subheading: "Lorem impsum sit alor decom"  
+    },
+    {
+        icon: code,
+        heading: "Front-end Development",
+        subheading: "Lorem impsum sit alor decom"  
+    },
 ]
 
 
