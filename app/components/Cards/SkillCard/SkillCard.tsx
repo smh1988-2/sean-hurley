@@ -7,7 +7,7 @@ import Image from "next/image";
 
 interface SkillCardProps {
   skill: {
-    icon: StaticImport | ReactNode | string;
+    icon: any | StaticImport | ReactNode | string;
     heading: string;
     subheading: string;
   };
@@ -15,9 +15,7 @@ interface SkillCardProps {
 
 function SkillCard(propsIn: SkillCardProps) {
   const props = { ...propsIn };
-
-  console.log(props);
-
+  
   return (
     <div className={styles.skillCard}>
       <Image src={props.skill.icon} alt="" width={55} />

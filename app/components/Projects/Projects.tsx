@@ -3,34 +3,36 @@ import React from "react";
 import styles from "./projects.module.css";
 import ProjectCard from "../Cards/ProjectCard/ProjectCard";
 
+import taylorem from "../../../public/images/taylorem.png"
+
 const projects = [
   {
     title: "Taylorem Ipswift",
     description: "Lorem ipsum sit alor decorum",
-    tools: ["HTML5, CSS, AWS, Google Analytics"],
+    tools: ["HTML5", "CSS", "AWS", "Google Analytics"],
     link: "https://www.taylorem-ipswift.com/",
-    image: "",
+    image: taylorem,
   },
   {
     title: "Taylorem Ipswift",
     description: "Lorem ipsum sit alor decorum",
-    tools: ["HTML5, CSS, AWS, Google Analytics"],
+    tools: ["HTML5", "CSS", "AWS", "Google Analytics"],
     link: "https://www.taylorem-ipswift.com/",
-    image: "",
+    image: taylorem,
   },
   {
     title: "Taylorem Ipswift",
     description: "Lorem ipsum sit alor decorum",
-    tools: ["HTML5, CSS, AWS, Google Analytics"],
+    tools: ["HTML5", "CSS", "AWS", "Google Analytics"],
     link: "https://www.taylorem-ipswift.com/",
-    image: "",
+    image: taylorem,
   },
   {
     title: "Taylorem Ipswift",
     description: "Lorem ipsum sit alor decorum",
-    tools: ["HTML5, CSS, AWS, Google Analytics"],
+    tools: ["HTML5", "CSS", "AWS", "Google Analytics"],
     link: "https://www.taylorem-ipswift.com/",
-    image: "",
+    image: taylorem,
   },
 ];
 
@@ -39,7 +41,7 @@ function Projects() {
     <section className={styles.projectsSection}>
       <div className={`container ${styles.projectsContainer}`}>
         <h2 className={`section-heading ${styles.projectsHeading}`}>
-          Some of the projects 🗃️ that I've built or worked on
+          Some of the projects 🗃️ that I've built🧱 or worked on
         </h2>
 
         <div className={styles.projectCardsContainer}>

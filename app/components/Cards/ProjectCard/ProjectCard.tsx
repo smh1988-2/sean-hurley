@@ -5,24 +5,40 @@ import { work_sans } from "@/app/fonts";
 
 import Image from "next/image";
 
-function ProjectCard() {
+interface ProjectCardProps {
+  project: {
+    title: string;
+    description: string;
+    tools: Array<string>;
+    link: string
+    image: any;
+  };
+}
+
+function ProjectCard(propsIn: ProjectCardProps) {
+  const props = { ...propsIn };
+
   return (
     <div className={styles.projectCard}>
+      <Image src={props.project.image} alt="" width={600} className={styles.projectImage} />
       <h3 className={`${work_sans.className} ${styles.projectCardTitle}`}>
-        title
+        {props.project.title}
       </h3>
-      <p className={styles.projectCardDescription}>description</p>
+      <p className={styles.projectCardDescription}>{props.project.description}</p>
       <div className={styles.toolsContainer}>
-        <p className={styles.projectCardTool}>Tool 1</p>
-        <p className={styles.projectCardTool}>Tool 2</p>
+        {props.project.tools.map((tool) => {
+          return (
+            <p className={styles.projectCardTool}>{tool}</p>
+          )
+        })}
       </div>
 
-      <div className={styles.projectLinkContainer}>
-      <a href="" className={`${work_sans.className} ${styles.projectCardLink}`}>
+      <a href="" className={styles.projectLinkContainer}>
+      <p className={`${work_sans.className} ${styles.projectCardLink}`}>
         View Project
-      </a>
+      </p>
       <span className={styles.projectArrow}></span>
-      </div>
+      </a>
     </div>
   );
 }
