@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero'
 import Intro from './components/Intro/Intro'
 import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
+import Testimonials from './components/Testimonials/Testimonials'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Intro />
       <Skills />
       <Projects />
+      <Testimonials />
       <ConversionPanel />
     </main>
   )

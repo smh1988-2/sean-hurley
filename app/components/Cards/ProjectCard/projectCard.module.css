@@ -19,6 +19,9 @@
     margin-bottom: .2rem;
 }
 
+.projectCardDescription {
+    font-weight: 300;
+}
 
 .toolsContainer {
     display: flex;
