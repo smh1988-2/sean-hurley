@@ -1,0 +1,53 @@
+.findMeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.findMeText {
+  margin-bottom: 1rem;
+}
+
+.buttonContainer {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+}
+
+.line {
+  transform: translate(-100%, 15px);
+  align-self: center;
+  width: 275px;
+  height: 2px;
+  background-color: var(--black);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageBgContainer {
+  position: absolute;
+  bottom: 1rem;
+  right: 4rem;
+}
+
+.image {
+  border-radius: 50px;
+  rotate: 12deg;
+  position: relative;
+}
+
+.bgShape {
+  height: 65%;
+  width: 100%;
+  background-color: var(--secondary-accent);
+  border-radius: 50px;
+  position: absolute;
+  bottom: 10px;
+  overflow: hidden;
+  left: -24px;
+  rotate: 12deg;
+}

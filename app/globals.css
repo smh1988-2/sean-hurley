@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
 
 :root {
-  --black: #06040E;
+  --black: #171211;
   --white: #fff;
 
+  --primary-accent: #FFAD05;
+  --tertiary-accent: #7F9172;
+  --secondary-accent: #477998;
+  
+  --gray: #C9CAD9;
+  --dark-gray: #A0A1BB;
 
-  --heading: 'Work Sans', sans-serif;
+  --hover-time: 300ms;
+  --hover-type: ease;
 
+  --section-heading: 4.5rem;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -56,4 +64,28 @@ table {
   margin:auto;
   max-width: 1200px;
   padding: 4rem 2rem;
+}
+
+.section-heading {
+  font-size: var(--section-heading);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.testimonialSwiper {
+  display: flex;
+}
+
+.testimonialSwiper .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonialSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
 }
