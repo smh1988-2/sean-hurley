@@ -15,21 +15,25 @@ import TestimonialSlide from "./TestimonialSlide";
 
 const testimonialsContent = [
   {
-    name: "",
-    title: "",
-    testimonial: "",
+    name: "John Doe",
+    title: "Developer",
+    testimonial: "Lorem ipsum sit alor decorum elit sin lorem ipsum.",
+    image: "",
   },
   {
-    name: "",
-    title: "",
-    testimonial: "",
+    name: "John Doe",
+    title: "Developer",
+    testimonial: "Lorem ipsum sit alor decorum elit sin lorem ipsum.",
+    image: "",
   },
   {
-    name: "",
-    title: "",
-    testimonial: "",
+    name: "John Doe",
+    title: "Developer",
+    testimonial: "Lorem ipsum sit alor decorum elit sin lorem ipsum.",
+    image: "",
   },
 ];
+
 function Testimonials() {
   return (
     <section className={styles.testimonialsSection}>
@@ -38,26 +42,20 @@ function Testimonials() {
           My former colleages have nice things to say 😇
         </h2>
 
-        <div className={styles.testimonialsSwiperContainer}>
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={50}
-            slidesPerView={3}
-            navigation
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
-          >
-            {testimonialsContent.map((testimonial) => {
-              return <SwiperSlide>
+        <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          className="testimonialSwiper"
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+        >
+          {testimonialsContent.map((testimonial) => {
+            return (
+              <SwiperSlide>
                 <TestimonialSlide testimonial={testimonial} />
-              </SwiperSlide>;
-            })}
-
-      
-          </Swiper>
-        </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </section>
   );
