@@ -1,13 +1,28 @@
 .testimonialsHeading {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
+.testimonialSlide {
+  max-width: 80%;
 }
 
 .testimonialText {
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.testimonialCredit {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .testimonialName {
-    font-weight: 600;
+  font-weight: 600;
+}
+
+.testimonialAvatar {
+  border-radius: 100%;
 }
