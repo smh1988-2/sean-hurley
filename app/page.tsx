@@ -1,6 +1,7 @@
 import Callouts from './components/Callouts/Callouts'
 import ConversionPanel from './components/ConversionPanel/ConversionPanel'
 import FindMe from './components/FindMe/FindMe'
+import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
 import Intro from './components/Intro/Intro'
 import Projects from './components/Projects/Projects'
@@ -18,6 +19,7 @@ export default function Home() {
       <Callouts />
       <Testimonials />
       <ConversionPanel />
+      <Footer />
     </main>
   )
 }
