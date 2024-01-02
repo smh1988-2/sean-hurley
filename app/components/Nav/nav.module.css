@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 0 1rem 0;
+    padding: 2rem 1rem 0rem 1rem;
 }
 
 .wordmarkContainer {
@@ -27,9 +27,13 @@
 
 .navWordmark {
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.navListContainer {
+    display: none;
 }
 
 .navList {
@@ -58,3 +62,23 @@
     background-color: var(--primary-accent);
     color: var(--black)
 }
+
+@media screen and (min-width: 768px) {
+    .navContainer {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .navWordmark {
+        font-size: 2rem;
+    }
+  }
+
+@media screen and (min-width: 992px) {
+    .navListContainer {
+        display: block;
+    }
+
+    .navContainer {
+        padding: 4rem 1rem 1rem 1rem;
+    }
+  }

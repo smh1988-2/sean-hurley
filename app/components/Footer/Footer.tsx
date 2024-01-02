@@ -18,7 +18,7 @@ function Footer() {
           <p className={styles.footerWordmark}>Sean Hurley</p>
         </div>
 
-        <div>
+        <div className={styles.footerListContainer}>
           <ul className={styles.footerList}>
             <li><a href="https://www.linkedin.com/in/sean-hurley/">LinkedIn</a></li>
             <li><a href="https://www.linkedin.com/in/sean-hurley/">Github</a></li>

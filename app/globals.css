@@ -14,7 +14,19 @@
   --hover-time: 300ms;
   --hover-type: ease;
 
-  --section-heading: 4.5rem;
+  --section-heading: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --section-heading: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+    --section-heading: 4.5rem;
+  }
 }
 
 html {

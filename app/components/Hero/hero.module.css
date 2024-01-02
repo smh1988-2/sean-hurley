@@ -1,6 +1,7 @@
 .heroSection {
   background: var(--black);
   color: var(--white);
+  padding-bottom: 5rem;
 }
 
 .heroContainer {
@@ -10,7 +11,7 @@
 }
 
 .heroContainer h1 {
-  font-size: 5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 600;
   line-height: 1.2;
@@ -19,7 +20,6 @@
 .heroTextContainer {
   display: flex;
   flex-direction: column;
-  max-width: 40%;
 }
 
 .heroTextContainer p {
@@ -31,4 +31,26 @@
 .heroButtonContainer {
   display: flex;
   gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .heroContainer h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .heroContainer h1 {
+    font-size: 5rem;
+  }
+
+  .heroTextContainer {
+    max-width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heroSection {
+    padding-bottom: 0;
+  }
 }

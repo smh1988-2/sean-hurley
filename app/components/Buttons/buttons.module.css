@@ -9,6 +9,7 @@
   cursor: pointer;
   transition: opacity var(--hover-time) var(--hover-type);
   text-decoration: none;
+  z-index: 99;
 }
 
 .btn.text {

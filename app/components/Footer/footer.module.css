@@ -31,6 +31,10 @@
     font-weight: 600;
 }
 
+.footerListContainer {
+    display: none;
+}
+
 .footerList {
     display: flex;
     gap: 1.5rem;
@@ -47,3 +51,9 @@
 .footerList a:hover {
     color: var(--primary-accent);
 }
+
+@media screen and (min-width: 992px) {
+    .footerListContainer {
+        display: block;
+    }
+  }
