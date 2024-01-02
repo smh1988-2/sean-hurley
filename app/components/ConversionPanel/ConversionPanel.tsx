@@ -17,9 +17,9 @@ function ConversionPanel() {
           #Open to work
         </h2>
 
-        <button className={styles.converionPanelButton}>
+        <a href="https://www.linkedin.com/in/sean-hurley/" className={styles.converionPanelButton}>
           <Image src={mergeIcon} alt="" width={70} height={70} />
-        </button>
+        </a>
       </div>
     </section>
   );

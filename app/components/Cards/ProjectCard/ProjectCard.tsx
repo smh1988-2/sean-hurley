@@ -10,7 +10,7 @@ interface ProjectCardProps {
     title: string;
     description: string;
     tools: Array<string>;
-    link: string
+    link: string;
     image: any;
   };
 }
@@ -20,24 +20,29 @@ function ProjectCard(propsIn: ProjectCardProps) {
 
   return (
     <div className={styles.projectCard}>
-      <Image src={props.project.image} alt="" width={600} className={styles.projectImage} />
+      <Image
+        src={props.project.image}
+        alt=""
+        width={600}
+        className={styles.projectImage}
+      />
       <h3 className={`${work_sans.className} ${styles.projectCardTitle}`}>
         {props.project.title}
       </h3>
-      <p className={styles.projectCardDescription}>{props.project.description}</p>
+      <p className={styles.projectCardDescription}>
+        {props.project.description}
+      </p>
       <div className={styles.toolsContainer}>
         {props.project.tools.map((tool) => {
-          return (
-            <p className={styles.projectCardTool}>{tool}</p>
-          )
+          return <p className={styles.projectCardTool}>{tool}</p>;
         })}
       </div>
 
-      <a href="" className={styles.projectLinkContainer}>
-      <p className={`${work_sans.className} ${styles.projectCardLink}`}>
-        View Project
-      </p>
-      <span className={styles.projectArrow}></span>
+      <a href={props.project.link} className={styles.projectLinkContainer}>
+        <p className={`${work_sans.className} ${styles.projectCardLink}`}>
+          View Project
+        </p>
+        <span className={styles.projectArrow}></span>
       </a>
     </div>
   );

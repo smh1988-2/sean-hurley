@@ -18,6 +18,11 @@
 .footerProfile {
     background-color: var(--secondary-accent);
     border-radius: 500px;
+    transition: rotate var(--hover-time) var(--hover-type);
+}
+
+.footerProfile:hover {
+    rotate: 180deg;
 }
 
 .footerWordmark {

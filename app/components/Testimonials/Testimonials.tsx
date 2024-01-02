@@ -59,7 +59,7 @@ const testimonialsContent = [
 
 function Testimonials() {
   return (
-    <section className={styles.testimonialsSection}>
+    <section className={styles.testimonialsSection} id="testimonials">
       <div className={`container ${styles.testimonialsContainer}`}>
         <h2 className={`section-heading section-heading-centered ${styles.testimonialsHeading}`}>
           My former colleages have nice things to say
@@ -78,8 +78,8 @@ function Testimonials() {
         >
           {testimonialsContent.map((testimonial) => {
             return (
-              <SwiperSlide>
-                <TestimonialSlide testimonial={testimonial} />
+              <SwiperSlide key={testimonial.name}>
+                <TestimonialSlide testimonial={testimonial}  />
               </SwiperSlide>
             );
           })}

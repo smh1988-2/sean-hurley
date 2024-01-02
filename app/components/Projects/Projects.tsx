@@ -38,7 +38,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section className={styles.projectsSection}>
+    <section className={styles.projectsSection} id="projects">
       <div className={`container ${styles.projectsContainer}`}>
         <h2 className={`section-heading ${styles.projectsHeading}`}>
           Some of the projects 🗃️ that I've built🧱 or worked on

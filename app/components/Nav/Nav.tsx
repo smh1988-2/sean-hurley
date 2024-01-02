@@ -20,9 +20,11 @@ function Nav() {
 
       <div>
         <ul className={styles.navList}>
-          <li><a href="https://www.linkedin.com/in/sean-hurley/">LinkedIn</a></li>
-          <li><a href="https://www.linkedin.com/in/sean-hurley/">Github</a></li>
-          <li><a href="mailto:seanmhurley1988@gmail.com">Email</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a className={styles.navCTA} href="https://www.linkedin.com/in/sean-hurley/">Contact Me</a></li>
         </ul>
       </div>
     </div>

@@ -19,6 +19,7 @@ function FindMe() {
               bgColor="transparent"
               color="black"
               type="text"
+              link="https://www.linkedin.com/in/sean-hurley/"
             />
             <Button
               content="Gh"
@@ -26,6 +27,7 @@ function FindMe() {
               bgColor="transparent"
               color="black"
               type="text"
+              link="https://github.com/smh1988-2/"
             />
             <Button
               content="Em"
@@ -33,6 +35,7 @@ function FindMe() {
               bgColor="transparent"
               color="black"
               type="text"
+              link="seanmhurley1988@gmail.com"
             />
           </div>
         </div>

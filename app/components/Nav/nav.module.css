@@ -18,6 +18,11 @@
 .navProfile {
     background-color: var(--secondary-accent);
     border-radius: 500px;
+    transition: rotate var(--hover-time) var(--hover-type);
+}
+
+.navProfile:hover {
+    rotate: 180deg;
 }
 
 .navWordmark {
@@ -27,8 +32,6 @@
     font-weight: 600;
 }
 
-
-
 .navList {
     display: flex;
     gap: 2.5rem;
@@ -37,4 +40,21 @@
 .navList li a {
     color: var(--white);
     text-decoration: none;
+    transition: color var(--hover-time) var(--hover-type);
+}
+
+.navList a:hover {
+    color: var(--primary-accent);
+}
+
+.navList li  .navCTA {
+    background-color: var(--secondary-accent);
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    transition: background-color var(--hover-time) var(--hover-type);
+}
+
+.navList li .navCTA:hover {
+    background-color: var(--primary-accent);
+    color: var(--black)
 }

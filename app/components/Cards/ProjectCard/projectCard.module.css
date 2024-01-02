@@ -50,8 +50,7 @@
 
 .projectLinkContainer:hover .projectArrow {
     transform: rotate(-45deg);
-    background-color: var(--tertiary-accent);
-    border-color: var(--tertiary-accent);
+    background-color: var(--primary-accent);
 }
 
 .projectArrow {
