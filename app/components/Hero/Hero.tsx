@@ -33,12 +33,14 @@ function Hero() {
             icon="waveIcon"
             bgColor="primary"
             color="black"
+            link="https://www.linkedin.com/in/sean-hurley/"
           />
           <Button
             content="Download Resume"
             icon="arrowIcon"
             bgColor="transparent"
             color="gray"
+            link="https://sh-storage-24.s3.us-west-1.amazonaws.com/sean-hurley-resume.pdf"
           />
         </div>
       </div>

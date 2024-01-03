@@ -1,24 +1,52 @@
 .converionPanelSection {
-    background-color: var(--black);
-    color: var(--white);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .conversionPanelContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
 .converionPanelHeading {
-    position: relative;
-    font-size: 6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.converionPanelHeading:before {
+.converionPanelButton {
+  padding: 4rem;
+  background-color: var(--white);
+  border: none;
+  border-radius: 100%;
+  width: fit-content;
+  rotate: 90deg;
+  cursor: pointer;
+  transition: background-color var(--hover-time) var(--hover-type),
+    rotate var(--hover-time) var(--hover-type);
+}
+
+.converionPanelButton:hover {
+  background-color: var(--primary-accent);
+  rotate: 45deg;
+}
+
+@media screen and (min-width: 768px) {
+  .converionPanelHeading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .converionPanelHeading {
+    font-size: 6rem;
+  }
+
+  .converionPanelHeading:before {
     content: "";
     position: absolute;
     top: 0;
@@ -31,22 +59,5 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.converionPanelButton {
-    padding: 4rem;
-    background-color: var(--white);
-    border: none;
-    border-radius: 100%;
-    width: fit-content;
-    rotate: 90deg;
-    cursor: pointer;
-    transition: background-color var(--hover-time) var(--hover-type),
-    rotate var(--hover-time) var(--hover-type)
-    ;
-}
-
-.converionPanelButton:hover {
-    background-color: var(--primary-accent);
-    rotate: 45deg;
+  }
 }

@@ -8,6 +8,7 @@ import arrowIcon from "../../../public/icons/arrow_right_alt_FILL0_wght400_GRAD0
 
 interface ButtonProps {
   content: string;
+  link?: string;
   icon: ReactNode | string;
   bgColor: string;
   color: string;
@@ -27,23 +28,36 @@ function Button(propsIn: ButtonProps) {
       icon = arrowIcon;
       break;
     default:
-      console.log(`none.`);
   }
 
-  return (
-    <button
+  return props.link ? (
+    <a
+      href={props.link}
       className={`
-        ${styles.btn} 
-        ${styles[props.bgColor]}
-        ${styles[props.color]}
-        ${styles[props.type]}
-        `}
+      ${styles.btn} 
+      ${styles[props.bgColor]}
+      ${styles[props.color]}
+      ${styles[props.type]}
+      `}
+    >{props.type !== "text" ? (
+      <Image src={icon} className={styles[props.icon]} alt="" />
+    ) : null}
+    {props.content}
+  </a>
+  ) : (
+    <a
+      className={`
+      ${styles.btn} 
+      ${styles[props.bgColor]}
+      ${styles[props.color]}
+      ${styles[props.type]}
+      `}
     >
       {props.type !== "text" ? (
         <Image src={icon} className={styles[props.icon]} alt="" />
       ) : null}
       {props.content}
-    </button>
+    </a>
   );
 }
 

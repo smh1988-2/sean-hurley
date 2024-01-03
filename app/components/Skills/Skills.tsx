@@ -42,7 +42,7 @@ const skills = [
 
 function Skills() {
   return (
-    <section className={styles.skillsSection}>
+    <section className={styles.skillsSection} id="skills">
       <div className={`container ${styles.skillsContainer}`}>
         <h2 className={`section-heading ${work_sans.className}`}>The 💪 skills I bring 🎯</h2>
 

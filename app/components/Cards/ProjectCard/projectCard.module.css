@@ -5,6 +5,7 @@
     border: 1px solid var(--gray);
     border-radius: 20px;
     padding: 2rem;
+    max-width: 250px
 }
 
 .projectImage {
@@ -25,8 +26,9 @@
 
 .toolsContainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .projectCardTool {
@@ -50,8 +52,7 @@
 
 .projectLinkContainer:hover .projectArrow {
     transform: rotate(-45deg);
-    background-color: var(--tertiary-accent);
-    border-color: var(--tertiary-accent);
+    background-color: var(--primary-accent);
 }
 
 .projectArrow {
@@ -68,3 +69,9 @@
     transition: background-color var(--hover-time) var(--hover-type),
     transform var(--hover-time) var(--hover-type);
 }
+
+@media screen and (min-width: 992px) {
+    .projectCard {
+        max-width: unset
+    }
+  }
