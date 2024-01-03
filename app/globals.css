@@ -222,3 +222,22 @@ table {
   width: 1rem;
   height: 1rem;
 }
+
+@media screen and (max-width: 992px) {
+  .testimonialSwiper .swiper-button-next,
+  .testimonialSwiper .swiper-button-prev {
+    left: 0;
+    transform: rotate(90deg);
+    color: var(--primary-accent);
+  }
+
+  .testimonialSwiper .swiper-button-prev:after,
+  .testimonialSwiper .swiper-button-next:after {
+    font-size: 1.5rem;
+  }
+  
+  .testimonialSwiper .swiper-button-prev {
+    top: 40%;
+  }
+  
+}

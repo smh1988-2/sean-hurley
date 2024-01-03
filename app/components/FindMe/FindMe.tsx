@@ -35,7 +35,7 @@ function FindMe() {
               bgColor="transparent"
               color="black"
               type="text"
-              link="seanmhurley1988@gmail.com"
+              link="mailto:seanmhurley1988@gmail.com"
             />
           </div>
         </div>
@@ -50,6 +50,7 @@ function FindMe() {
               height="700"
               alt=""
               className={styles.image}
+              priority={true}	
             />
           </div>
         </div>

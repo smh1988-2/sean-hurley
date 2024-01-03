@@ -68,11 +68,15 @@ function Testimonials() {
         <Swiper
           modules={[Navigation, Pagination, A11y, Autoplay]}
           direction={"vertical"}
-          slidesPerView={"auto"}
+          slidesPerView={1}
           navigation={true}
           className="testimonialSwiper"
           pagination={{ clickable: true }}
           loop={true}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: true,
+          }}
           centeredSlides={true}
           autoHeight={true}
         >
