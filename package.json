@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< Updated upstream
+=======
+    "next": "14.0.2",
+    "node": "^21.2.0",
+>>>>>>> Stashed changes
     "react": "^18",
     "react-dom": "^18",
     "next": "14.0.2"
