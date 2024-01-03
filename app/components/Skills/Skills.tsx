@@ -49,7 +49,7 @@ function Skills() {
         <div className={styles.skillsCardContainer}>
             {skills.map((skill) => {
                 return (
-                    <SkillCard skill={skill} />
+                    <SkillCard skill={skill} key={skill.heading} />
                 )
             })}
         </div>
