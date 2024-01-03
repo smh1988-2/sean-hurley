@@ -1,0 +1,41 @@
+.testimonialsHeading {
+  margin-bottom: 3rem;
+}
+
+.testimonialSlide {
+  max-width: 80%;
+}
+
+.testimonialText {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.testimonialCredit {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.testimonialName {
+  font-weight: 600;
+}
+
+.testimonialAvatar {
+  border-radius: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+  .testimonialText {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .testimonialText {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,29 @@
+.skillCard {
+  outline: 1px solid var(--gray);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 3rem;
+  transition: background-color var(--hover-time) var(--hover-type),
+  outline var(--hover-time) var(--hover-type);
+}
+
+.skillCard:hover {
+    background-color: var(--primary-accent);
+    outline: none;
+}
+
+.skillCardHeading {
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  color: var(--black);
+}
+
+.skillCardSubheading {
+  color: var(--black);
+  opacity: 0.7;
+}

@@ -1,0 +1,28 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skillsContainer h2 {
+  max-width: 600px;
+  margin: auto;
+}
+
+.skillsCardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .skillsCardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .skillsCardContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

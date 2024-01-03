@@ -1,0 +1,59 @@
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wordmarkContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footerProfile {
+    background-color: var(--secondary-accent);
+    border-radius: 500px;
+    transition: rotate var(--hover-time) var(--hover-type);
+}
+
+.footerProfile:hover {
+    rotate: 180deg;
+}
+
+.footerWordmark {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footerListContainer {
+    display: none;
+}
+
+.footerList {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footerList a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+    transition: color var(--hover-time) var(--hover-type);
+}
+
+.footerList a:hover {
+    color: var(--primary-accent);
+}
+
+@media screen and (min-width: 992px) {
+    .footerListContainer {
+        display: block;
+    }
+  }

@@ -1,0 +1,76 @@
+.findMeContainer {
+  margin-top: 32rem;
+  position: relative;
+}
+
+.findMeText {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.buttonContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.imageBgContainer {
+  position: absolute;
+  top: -54rem;
+}
+
+.image {
+  border-radius: 50px;
+  position: relative;
+}
+
+.bgShape {
+  height: 65%;
+  width: 100%;
+  background-color: var(--secondary-accent);
+  border-radius: 50px;
+  position: absolute;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .findMeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10rem;
+  }
+
+  .image {
+    rotate: 12deg;
+  }
+
+  .bgShape {
+    bottom: 10rem;
+    left: -13px;
+    rotate: 12deg;
+  }
+
+  .imageBgContainer {
+    position: absolute;
+    bottom: 1rem;
+    right: 4rem;
+  }
+
+  .line {
+    transform: translate(-100%, 15px);
+    align-self: center;
+    width: 255px;
+    height: 2px;
+    background-color: var(--black);
+  }
+}
