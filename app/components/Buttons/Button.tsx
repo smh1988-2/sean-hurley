@@ -9,10 +9,10 @@ import arrowIcon from "../../../public/icons/arrow_right_alt_FILL0_wght400_GRAD0
 interface ButtonProps {
   content: string;
   link?: string;
-  icon: ReactNode | string;
+  icon: ReactNode | string | any;
   bgColor: string;
   color: string;
-  type?: string;
+  type?: string | any;
 }
 
 function Button(propsIn: ButtonProps) {
