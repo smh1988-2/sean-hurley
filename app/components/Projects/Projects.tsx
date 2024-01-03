@@ -41,13 +41,13 @@ function Projects() {
     <section className={styles.projectsSection} id="projects">
       <div className={`container ${styles.projectsContainer}`}>
         <h2 className={`section-heading ${styles.projectsHeading}`}>
-          Some of the projects 🗃️ that I've built🧱 or worked on
+          Some of the projects 🗃️ that I&apos;ve built🧱 or worked on
         </h2>
 
         <div className={styles.projectCardsContainer}>
             {projects.map((project) => {
                 return (
-                    <ProjectCard project={project} />
+                    <ProjectCard project={project} key={project.title} />
                 )
             })}
         </div>

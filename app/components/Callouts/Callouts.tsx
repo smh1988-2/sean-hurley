@@ -12,7 +12,7 @@ function Callouts() {
         <h2
           className={`section-heading section-heading-centered ${work_sans.className}`}
         >
-          I'm proud of the work I've done 🏆
+          I&apos;m proud of the work I&apos;ve done 🏆
         </h2>
 
         <div className={styles.calloutWrapper}>

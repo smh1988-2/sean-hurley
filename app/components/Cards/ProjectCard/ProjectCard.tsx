@@ -34,7 +34,7 @@ function ProjectCard(propsIn: ProjectCardProps) {
       </p>
       <div className={styles.toolsContainer}>
         {props.project.tools.map((tool) => {
-          return <p className={styles.projectCardTool}>{tool}</p>;
+          return <p className={styles.projectCardTool} key={tool}>{tool}</p>;
         })}
       </div>
 

@@ -21,7 +21,7 @@ function Hero() {
 
         <div className={styles.heroTextContainer}>
           <p>
-            Hi! I'm Sean Hurley, a software engineer with a passion for creating
+            Hi! I&apos;m Sean Hurley, a software engineer with a passion for creating
             beautiful, accessible, and functional websites to help your business
             grow 📈 and succeed!
           </p>
