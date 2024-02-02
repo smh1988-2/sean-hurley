@@ -10,8 +10,6 @@ function FindMe() {
     <section className={styles.findMeSection}>
       <div className={`container ${styles.findMeContainer}`}>
         <div>
-          {/* <p className={styles.findMeText}>Find me:</p> */}
-
           <div className={styles.buttonContainer}>
             <Button
               content="In"

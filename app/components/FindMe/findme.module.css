@@ -1,6 +1,7 @@
 .findMeContainer {
   margin-top: 32rem;
   position: relative;
+  display: none;
 }
 
 .findMeText {
@@ -41,6 +42,11 @@
   overflow: hidden;
 }
 
+@media screen and (min-width: 576px) {
+  .findMeContainer {
+    display: block;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .findMeContainer {
