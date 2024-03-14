@@ -18,7 +18,6 @@
 .calloutCard {
   position: relative;
   padding-bottom: 5rem;
-  max-width: 70%;
 }
 
 .calloutCard:before {
@@ -54,4 +53,11 @@
 .calloutCardText {
   font-size: 1.75rem;
   line-height: 1.35;
+}
+
+
+@media screen and (min-width: 992px) {
+  .calloutCard {
+    max-width: 70%;
+  }
 }
