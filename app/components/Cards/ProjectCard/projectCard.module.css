@@ -5,7 +5,7 @@
     border: 1px solid var(--gray);
     border-radius: 20px;
     padding: 2rem;
-    max-width: 250px
+    /* max-width: 250px */
 }
 
 .projectImage {
@@ -22,6 +22,7 @@
 
 .projectCardDescription {
     font-weight: 300;
+    line-height: 1.2;
 }
 
 .toolsContainer {
