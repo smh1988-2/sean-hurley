@@ -19,21 +19,21 @@ function Callouts() {
           <CalloutCard
             color={"green"}
             content={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget arcu scelerisque, maximus lorem ac, aliquet odio. Nunc non blandit mi. Etiam tristique nulla tellus, ut condimentum sapien ullamcorper at."
+              "I upsold clients on new projects and work by proactively suggesting updates and enhancements to their marketing websites, leading to increased revenue."
             }
             alignment={"left"}
           />
           <CalloutCard
             color={"purple"}
             content={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget arcu scelerisque, maximus lorem ac, aliquet odio. Nunc non blandit mi. Etiam tristique nulla tellus, ut condimentum sapien ullamcorper at."
+              "After my first year as a frontend developer, I was promoted to L2 & I was recognized for exceptional client communication at Webstacks."
             }
             alignment={"right"}
           />
           <CalloutCard
             color={"yellow"}
             content={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget arcu scelerisque, maximus lorem ac, aliquet odio. Nunc non blandit mi. Etiam tristique nulla tellus, ut condimentum sapien ullamcorper at."
+              "I took over as lead developer on a client's (Legit Security) marketing website relaunch at the last minute. We launched on-time and on-budget."
             }
             alignment={"left"}
           />

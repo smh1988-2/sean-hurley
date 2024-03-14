@@ -17,9 +17,10 @@ export default function Home() {
       <FindMe />
       <Intro />
       <Skills />
+      <ConversionPanel />
+      <Testimonials />
       <Projects />
       <Callouts />
-      <Testimonials />
       <ConversionPanel />
       <Footer />
     </main>
